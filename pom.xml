@@ -21,7 +21,7 @@
 
     <groupId>org.glassfish.external</groupId>
     <artifactId>management-api</artifactId>
-    <version>3.2.2-SNAPSHOT</version>
+    <version>3.2.3-ahp</version>
     <packaging>jar</packaging>
 
     <name>management-api</name>
@@ -49,10 +49,20 @@
     </issueManagement>
 
     <distributionManagement>
-        <site>
-            <id>github</id>
-            <url>scm:git:https://github.com/eclipse-ee4j/orb-gmbal-commons.git</url>
-        </site>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>iqbasis.mavenrepo.releases</id>
+            <name>iQ-BASIS Release Repository</name>
+            <url>http://nexus3.ahpgmbh.local/repository/maven-releases</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>iqbasis.mavenrepo.snapshots</id>
+            <name>iQ-BASIS Snapshot Repository</name>
+            <url>http://nexus3.ahpgmbh.local/repository/maven-snapshots</url>
+            <layout>default</layout>
+        </snapshotRepository>
     </distributionManagement>
 
     <properties>
